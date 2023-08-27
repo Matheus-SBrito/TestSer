@@ -1,0 +1,134 @@
+{% extends "navbar.html" %}
+{% block title %}Principal{% endblock %}
+{% block header2 %}
+<link rel="stylesheet" href="/static/css/Informacoes-aluno.css">
+{% endblock %}
+{% block conteudo %}
+    <div class="sino">
+        <div>
+            <span> 1 </span>
+            <img src="/static/imagens/sino.png" alt="sino">
+        </div>
+    </div>
+    <div class="block">
+        <div class="cabecalho">
+            <h1 id="nome_aluno"> Lucas Guilherme Suarez de Araujo </h1>
+            <a href="#" id="botao_imprimir"> Imprimir <img src="/static/imagens/pdf.png" alt="pdf"></a>
+        </div>
+        <div class="navegacao">
+            <button id="botao1" onclick="apagar_boletim()"> Dados</button>
+            <button id="botao2" onclick="apagar_dados()"> Boletim</button>
+            <hr>
+        </div>
+        <div class="parte_baixo">
+            <div class="informacoes">
+                <img src="/static/imagens/perfil-de-usuario.png" alt="iconuser">
+                <div class="bloco">
+                    <div class="linha1">
+                        <span class="item1"> <b>Nome:</b> Lucas Guilherme Suarez de Araujo </span>
+                        <span class="item2"> <b>Matricula:</b> 202214610039 </span>
+                    </div>
+                    <div class="linha2">
+                        <span class="item1"><b>Cpf:</b> 162.644.232-11</span>
+                        <span class="item2"> <b>Data de Nascimento:</b> 13/07/2022</span>
+                    </div>
+                    <div class="linha1">
+                        <span class="item1"><b>Email:</b> luizmiguelgb@gmail.com</span>
+                    </div>
+                    <div class="linha2">
+                        <span class="item1"><b>Curso:</b> Informatica</span>
+                    </div>
+                    <div class="linha3">
+                        <span><b>Situacao:</b> <span id="situacao_matricula"> Matriculado </span></span>
+                        <span><b>Inicio:</b> 12/02/2020</span>
+                        <span><b>Termino:</b> 12/02/2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <h3 id="titulo_responsavel"> Dados Familiares</h3>
+            <hr>
+            
+            <div class="bloco_responsavel">
+                <div class="linha1">
+                    <span> <b>Nome:</b> Joseilda Tavares Pinto Silva</span>
+                </div>
+                <div class="linha2">
+                    <span> <b>E-mail:</b> joseildinhada06@gmail.com</span>
+                </div>
+                <div class="linha1">
+                    <span> <b>Cpf:</b> 1291983919182</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="boletim container p-3 ">
+            <table class="table table-hover table-bordered table-secondary ">
+                <thead>
+                    <tr class="row">
+                        <th class=" col border table-secondary text-center">Diário</th>
+                        <th class=" col table-secondary text-center">Disciplinas</th>
+                        <th class=" col table-secondary text-center">T.Faltas</th>
+                        <th class=" col table-secondary ">% Freq.</th>
+                        <th class=" text-center col table-secondary">E1
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th class=" text-center col table-secondary">E2
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th class=" text-center col table-secondary">E3
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th class=" text-center col table-secondary">E4
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th class=" col border table-secondary text-center">MD</th>
+                        <th class=" text-center col table-secondary">NAF
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th class=" col border table-secondary text-center">MFD/Conceito</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/static/js/informacoes-aluno.js"></script>
+    
+{% endblock %}

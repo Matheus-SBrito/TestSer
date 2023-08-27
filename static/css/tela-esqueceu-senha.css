@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+ }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: linear-gradient(
+        to right,
+        #3779AE 0%,
+        #3779AE 25%,
+        #8FC5C3 25%,
+        #8FC5C3 50%,
+        white 50%,
+        white 100%
+    );
+    color: black;
+    
+}
+
+
+
+
+
+
+
+form {
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin-top: 13%;
+}
+
+form h1 {
+    font-size: 25px;
+}
+
+
+
+
+
+.input-text {
+    position: relative;
+    background-color: none;
+    
+    
+}
+
+
+.input-text label {
+    position: absolute;
+    left: 0;
+}
+
+.input {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #474747;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+    cursor: text;
+}
+
+
+
+
+.botao:hover{
+    background: #47474781;
+    color: #000000;
+}
+

@@ -1,0 +1,99 @@
+{% extends "navbar.html" %}
+{% block title %}Principal{% endblock %}
+{% block header2 %}
+
+<link rel="stylesheet" href="/static/css/Cadastrado.css">
+{% endblock %}
+{% block conteudo %}
+<body>
+    
+
+    <div class="cabecalho container mt-5">
+        <div class="block">
+            <div class="navegacao">
+                <button id="botao1" onclick="apagar_boletim()"> Alunos Cadastrados </button>
+                <button id="botao2" onclick="apagar_dados()"> Professores Cadastrados</button>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+    
+        <div class="parte_baixo p-3"> 
+            <div class="informacoes container p-3">
+
+                <h1 class="d-flex justify-content-end  "> Tabela de Alunos no Sistema</h1>
+                <hr class="">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                     
+                        <input id="input-buscar" type="text" class="form-control me-5 w-50 p-2 shadow-none" placeholder="Pesquisar">
+                      
+                    </div>
+                  </nav>
+                
+                <table class="table table-bordered table-striped my-4 table-hover table-secondary text-center ">
+                    <thead class="bg-secondary">
+                    
+                        <tr>
+                            <th>Nome do Usuário:</th>
+                            <!-- <th>Idade:</th> -->
+                            <th>Matricula:</th>
+                            <th>Ações:</th>
+                        </tr>
+                    </thead>
+                    
+                    {% if inf %}
+                        
+                    <tbody id='tabela'>
+                        {% if inf == []%}
+                            {% for dado in inf%}
+                            
+                            <tr>
+                                <td>{{inf[dado].nome}}</td>
+                                <!-- <td>{{inf[dado].idade}}</td> -->
+                                <td>{{inf[dado].get_matricula()}}</td>
+                                {% with tipo_usuario = session.get("usuario", 0) %}
+                                <td>
+                                    {}
+                                    <button class="btn btn-sm btn-success">Editar</button>
+                                </td>
+                                {% endwith %}
+                            </tr>
+                            {% endfor %}
+                        {% endif %}
+                        
+
+                    </tbody>
+                    {% endif %}
+
+                </table>
+        </div>
+            
+
+            
+
+    <div class="boletim container p-3">
+        <table>
+            <thead class="table table-bordered table-hover table-striped table-secondary">
+                <tr>
+                    <th>Nome do Usuário:</th>
+                    <th>Idade:</th>
+                    <th>Matricula:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="/static/js/filtro-pesquisa.js"></script>
+    <script src="/static/js/informacoes-aluno.js"></script>
+    
+{% endblock %}
+

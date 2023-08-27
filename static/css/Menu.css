@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+
+
+body {
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 55%,
+        #545454 55%,
+        #545454 60%,
+        #207BC4 60%,
+        #207BC4 100%
+    );
+    padding: 50px;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+.dist-b{
+    margin-top: 15%;;
+
+
+
+}
+.dist-a {
+    margin-top: 15%;
+
+
+}
+
+.container {
+    position: absolute;
+    left:0%;
+    top: 5%;
+    width: 50%;
+    height: 80%;
+    max-width: 100%;
+    
+    
+
+
+}
+
+.container-right {
+
+
+    position: absolute;
+    left: 32%;
+    top: 13%;
+    width: 25%;
+    height: 80%;
+    max-width: 100%;
+    
+}
+
+
+.button1{
+    
+    display: flex;
+    border-radius: 0%;
+    box-shadow: 10px 10px 20px rgba(7, 1, 1, 0.518);
+    color: black;
+    font-weight: 550;  
+    position: relative;
+    border-color: #545454;
+    
+
+
+}
+
+.b-grande {
+    width: 60%;
+    height: 200px;
+
+
+
+}
+
+
+.button-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 60%;
+}
+
+.centro {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 10%;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+.button2 {
+    display: block; /* Espaço dos botões e distância entre elas   */
+    margin-bottom: 5%;
+    margin-left: 15%;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(7, 1, 1, 0.518);
+    border-color: #545454;
+
+
+}
+
+.dist-b > label {
+    margin-left: 15%;
+    position: absolute;
+    left:1%;
+    top: 8%;
+    width: 34%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(222, 136, 30, 0.097);
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
